@@ -1,0 +1,23 @@
+{% load static %}
+{% for data in contacts %}
+    <!-- about -->
+	<div class="about">
+		<div class="container">
+			<div class="agileits_about_grids">
+                <a href="/djangoblogshow/?id={{ data.id }}">
+				<div class="col-md-6 agileits_about_grid_left">
+					<h3>{{ data.title }}</h3>
+					<p>{{ data.introduction }}</p>
+				</div>
+				<div class="col-md-6 agileits_about_grid_right">
+					<img src="{{ data.images }}" alt=" " class="img-responsive" />
+				</div>
+				<div class="clearfix"> </div>
+                </a>
+			</div>
+		</div>
+	</div>
+	<!-- //about -->
+{% empty %}
+    <p>暂无数据。</p>
+{% endfor %}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MarkDown</title>
+</head>
+<body>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'web/css/code.css' %}">
+
+
+{{ markdown_data|safe }}
+
+
+
+</body>
+</html>

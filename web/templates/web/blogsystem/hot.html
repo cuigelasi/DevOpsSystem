@@ -1,0 +1,104 @@
+{% load static %}
+
+	<div class="gallery" id="gallery">
+		<h3>热门文章</h3>
+		<p class="nostrud agileits-w3layouts">近期读者最喜爱的博文</p>
+		<div class="w3agile_gallery_grids">
+            {% for data in contacts %}
+			<div class="col-md-3 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+					<a class="sb" href="{{ data.images }}" title="{{ data.title }}" titleid="{{ data }}">
+						<figure>
+							<img src="{{ data.images }}" alt="" class="img-responsive" />
+							<figcaption>
+								<h4>{{ data.title }}</h4>
+								<p>
+									{{ data.introduction }}
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+            {% empty %}
+                <p>暂无数据。</p>
+            {% endfor %}
+		   <div class="clearfix"> </div>
+		</div>
+		<script type="text/javascript" src="{%  static 'web/blogsystem/js/smoothbox.jquery2.js' %}"></script>
+	</div>
+
+
+
+
+{#    <!-- //team-bottom -->#}
+{#	<!-- gallery -->#}
+{#	<div class="gallery" id="gallery">#}
+{#		<h3>热门文章</h3>#}
+{#		<p class="nostrud agileits-w3layouts">近期读者最喜爱的博文</p>#}
+{#		<div class="w3agile_gallery_grids">#}
+{#			<div class="col-md-3 w3agile_gallery_grid">#}
+{#				<div class="w3agile_gallery_image">#}
+{#					<a class="sb" href="{%  static 'web/blogsystem/images/8.jpg' %}" title="导读：知其然知其所以然">#}
+{#						<figure>#}
+{#							<img src="{%  static 'web/blogsystem/images/8.jpg' %}" alt="" class="img-responsive" />#}
+{#							<figcaption>#}
+{#								<h4>导读：知其然知其所以然</h4>#}
+{#								<p>#}
+{#									Openstack学习必然是一个艰难的事情，但是真正理解了各个OpenStack组件的功能以及组件间的相互协作流程，那么在日常工作中将会是一笔无形的财富。未来遇见了再多bug时，也不会慌，因为你知道每个组件负责什么工作，也知道每个组件是怎样去工作，排查思路了然于心。#}
+{#								</p>#}
+{#							</figcaption>#}
+{#						</figure>#}
+{#					</a>#}
+{#				</div>#}
+{#			</div>#}
+{#			<div class="col-md-3 w3agile_gallery_grid">#}
+{#				<div class="w3agile_gallery_image">#}
+{#					<a class="sb" title="何为身份认证服务 Keystone" href="{%  static 'web/blogsystem/images/9.jpg' %}">#}
+{#						<figure>#}
+{#							<img src="{%  static 'web/blogsystem/images/9.jpg' %}" alt="" class="img-responsive" />#}
+{#							<figcaption>#}
+{#								<h4>何为身份认证服务 Keystone</h4>#}
+{#								<p>#}
+{#									OpenStack Identity服务因为其特殊的特性，必然是我们在学习OpenStack中第一个接触的服务。我们每个人都是一个用户个体，当我们使用OpenStack任何一个服务时，都需要我们出示OpenStack Identity服务给我们颁发的通行证书，待这些服务验证过通行证书之后才开放相应的功能给我们使用。#}
+{#								</p>#}
+{#							</figcaption>#}
+{#						</figure>#}
+{#					</a>#}
+{#				</div>#}
+{#			</div>#}
+{#			<div class="col-md-3 w3agile_gallery_grid">#}
+{#				<div class="w3agile_gallery_image">#}
+{#					<a class="sb" title="何为身份认证服务 Glance" href="{%  static 'web/blogsystem/images/10.jpg' %}">#}
+{#						<figure>#}
+{#							<img src="{%  static 'web/blogsystem/images/10.jpg' %}" alt="" class="img-responsive" />#}
+{#							<figcaption>#}
+{#								<h4>何为身份认证服务 Glance</h4>#}
+{#								<p>#}
+{#									我们常说的Glance 便是OpenStack Image服务的组件。镜像服务顾名思义是指管理镜像的服务啊！管理镜像实际上就是对镜像的发现、注册、检索、删除。同样Glance 也提供了一个 REST API，我们可以通过API查询虚拟机镜像的元数据并检索出实际镜像。通过Image服务管理虚拟机镜像存储到指定位置，这个位置可以是最简单的文件系统还可以是Open#}
+{#								</p>#}
+{#							</figcaption>#}
+{#						</figure>#}
+{#					</a>#}
+{#				</div>#}
+{#			</div>#}
+{#			<div class="col-md-3 w3agile_gallery_grid w3-agileits">#}
+{#				<div class="w3agile_gallery_image">#}
+{#					<a class="sb" title="深入理解keystone九大概念" href="{%  static 'web/blogsystem/images/11.jpg' %}">#}
+{#						<figure>#}
+{#							<img src="{%  static 'web/blogsystem/images/11.jpg' %}" alt="" class="img-responsive" />#}
+{#							<figcaption>#}
+{#								<h4>深入理解keystone九大概念</h4>#}
+{#								<p>#}
+{#									学习一个OpenStack组件，首先我们要了解它的构成，然后一步步的去剖析这些细小的部分的功能，最后将整个组件的工作流程梳理出来。接下来，请跟着我的节奏，去了解一下keystone组件的九大概念。#}
+{#								</p>#}
+{#							</figcaption>#}
+{#						</figure>#}
+{#					</a>#}
+{#				</div>#}
+{#			</div>#}
+{#		   <div class="clearfix"> </div>#}
+{#		</div>#}
+{#		<script type="text/javascript" src="{%  static 'web/blogsystem/js/smoothbox.jquery2.js' %}"></script>#}
+{#	</div>#}
+{#	<!-- //gallery -->#}

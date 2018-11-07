@@ -1,0 +1,82 @@
+{% load static %}
+	<div class="w3ls-banner" style="margin-bottom: 20px">
+		<div class="center-container">
+			<div class="navigation">
+				<div class="container">
+					<div class="agileits-logo">
+						<h1><a href="index.html">CGLS Blog  <span class="w3agile">Support is provided using django</span></a></h1>
+					</div>
+					<div class="navigation-right">
+						<span class="menu"><img src="{%  static 'web/blogsystem/images/menu.png' %}" alt=" " /></span>
+						<nav class="link-effect-3" id="link-effect-3">
+							<ul class="nav1 nav">
+								<li class="active"><a data-hover="Table Show" href="/admin/web/article/" target="_blank">Table Show</a></li>
+								<li><a href="/admin/web/article/add/" target="_blank" class="scroll" data-hover="Writing">Writing</a></li>
+								<li><a href="/admin/web/article/" target="_blank" class="scroll" data-hover="Modify">Modify</a></li>
+								<li><a data-hover="Delete" href="/admin/web/article/" target="_blank" class="scroll">Delete</a></li>
+							</ul>
+						</nav>
+							<!-- script-for-menu -->
+							<script>
+							   $( "span.menu" ).click(function() {
+								 $( "ul.nav1" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							</script>
+							<!-- //script-for-menu -->
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="w3ls_banner_info">
+				<div class="container">
+					<div class="w3l_banner_logo">
+						<h2>cgls</h2>
+					</div>
+					<h3>云平台运维开发工程师，自媒体人。</h3>
+					<p>现就职于云计算，大数据，安全行业。从实际生产中积累运维开发经验，从工作痛点中思考技术解决方案，从自我出发深耕于云平台，容器领域。</p>
+					<div class="more">
+                        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+                        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+                        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+                        <!-- 按钮触发模态框 -->
+                        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                            打赏作者
+                        </button>
+                        <!-- 模态框（Modal） -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                            &times;
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel">
+                                            扫下方二维码，给作者发红包
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body" style="margin-bottom: 180px">
+                                        <div class="col-sm-6 col-md-4 col-md-offset-2" >
+                                            <img src="{%  static 'web/blogsystem/images/zfb.png' %}" alt=" " class="img-responsive" />
+                                        </div>
+                                        <div class="col-sm-6 col-md-4" >
+                                            <img src="{%  static 'web/blogsystem/images/wx.png' %}"alt=" " class="img-responsive" />
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">打赏
+                                        </button>
+{#                                        <button type="button" class="btn btn-primary">#}
+{#                                            提交更改#}
+{#                                        </button>#}
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal -->
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

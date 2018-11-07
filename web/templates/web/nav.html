@@ -1,0 +1,174 @@
+{# 导航栏 #}
+{% load static %}
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="#">DevOps Index</a>
+	</div>
+	<div>
+		<ul class="nav navbar-nav">
+			<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    虚拟化
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+					<li><a href="#">VMware</a></li>
+                    <li class="divider"></li>
+					<li><a href="#">VirtualBox</a></li>
+                    <li class="divider"></li>
+					<li><a href="#">KVM</a></li>
+				</ul>
+            </li>
+			<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    私有云
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+					<li><a href="#">OpenStack Kilo</a></li>
+                    <li class="divider"></li>
+					<li><a href="#">OpenStack Mitaka</a></li>
+                    <li class="divider"></li>
+					<li><a href="#">OpenStack Ocata</a></li>
+                    <li class="divider"></li>
+					<li><a href="http://172.16.1.127/dashboard" target="_blank">OpenStack Pike</a></li>
+                    <li class="divider"></li>
+					<li><a href="#">OpenStack Rocky</a></li>
+				</ul>
+            </li>
+			<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    容器云
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+					<li><a href="#">Docker</a></li>
+                    <li class="divider"></li>
+					<li><a href="#">Docker Swarm</a></li>
+                    <li class="divider"></li>
+					<li><a href="#">Docker Compose</a></li>
+                    <li class="divider"></li>
+					<li><a href="http://172.16.2.237:30333" data-toggle="dropdown">Kubernetes</a></li>
+				</ul>
+            </li>
+			<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    版本控制
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+					<li><a href="/svnindex/">SVN</a></li>
+                    <li class="divider"></li>
+					<li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                    <li class="divider"></li>
+					<li><a href="http://172.10.2.103/" target="_blank">GitLab</a></li>
+				</ul>
+            </li>
+			<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    CI/CD
+                    <b class="caret"></b>
+                </a>
+                 <ul class="dropdown-menu">
+					<li><a href="http://172.10.2.104:8080/" target="_blank">Jenkins</a></li>
+				</ul>
+            </li>
+			<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    自动化配置
+                    <b class="caret"></b>
+                </a>
+                 <ul class="dropdown-menu">
+					<li><a href="#">Ansible</a></li>
+                    <li class="divider"></li>
+                    <li><a href="https://172.16.1.150/cobbler_web" target="_blank">Cobble</a></li>
+				</ul>
+            </li>
+			<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    自动化测试
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+					<li><a href="#">UI自动化(selenium)</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">API自动化(unittest)</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">压力自动化(jemeter)</a></li>
+				</ul>
+            </li>
+			<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    日志采集
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+					<li><a href="http://172.16.11.150:5601/" target="_blank">ELK</a></li>
+				</ul>
+            </li>
+			<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    应用监控
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+					<li><a href="#">Zabbix</a></li>
+                    <li class="divider"></li>
+                    <li><a href="http://172.16.11.150:4040/" target="_blank">Weave</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Script</a></li>
+				</ul>
+            </li>
+			<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    System
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+					<li><a href="#">Linux Centos7</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Linux Ubuntu</a></li>
+				</ul>
+            </li>
+			<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Program
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+					<li><a href="#">Python3</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Shell</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Go</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Java</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Bootstrap</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Nodejs</a></li>
+				</ul>
+            </li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					BlogSystem
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="http://www.cuijanmin.top/" target="_blank">Hexo Blog</a></li>
+					<li><a href="/djangoblogindex/">Django Blog</a></li>
+					<li><a href="https://blog.csdn.net/cuigelasi" target="_blank">CSDN Blog</a></li>
+					<li class="divider"></li>
+					<li><a href="https://web.jingoal.com/#/calendar?_k=x5uoq8" target="_blank">工作计划</a></li>
+					<li><a href="https://web.jingoal.com/#/calendar?_k=x5uoq8" target="_blank">今日总结</a></li>
+					<li class="divider"></li>
+					<li><a href="http://naotu.baidu.com/file/9b9c963dc33163ba1c46a50b52beedcc?token=f43a3d7f545ba86f" target="_blank">DevOps工具链</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	</div>
+</nav>

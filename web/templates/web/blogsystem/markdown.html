@@ -1,0 +1,19 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'web/css/code.css' %}">
+<a href="/djangoblogindex/"><button class="btn btn-primary " data-toggle="modal" data-target="#myModal" style="margin-left: 40px">< < 返回首页</button></a>
+<!-- about -->
+<div class="about">
+    <div class="container">
+        <div class="agileits_about_grids">
+
+            <div class="col-md-12 ">
+                <h1>{{ articledata.title }}</h1>
+                <br>
+                {{ article_content_data|safe }}
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- //about -->

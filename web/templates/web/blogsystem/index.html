@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% load static %}
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="{%  static 'web/blogsystem/css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
+<link href="{%  static 'web/blogsystem/css/style.css' %}" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="{%  static 'web/blogsystem/css/smoothbox.css' %}" type='text/css' >
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="{%  static 'web/blogsystem/js/jquery.min.js' %}"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- //js -->
+<!-- web font -->
+<link href="http://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- //web font -->
+
+</head>
+<body>
+{# 主导航栏 #}
+{% include "web/nav.html" %}
+{# 博客导航栏 #}
+{% include "web/blogsystem/nav.html" %}
+{# 博客文章栏 #}
+{% include "web/blogsystem/about.html" %}
+
+
+{# 翻页代码 #}
+<div class="container">
+    <ul class="pagination">
+        {#上一页按钮开始#}
+        {# 如果当前页有上一页#}
+        {% if contacts.has_previous %}
+            {#  当前页的上一页按钮正常使用#}
+            <li class="previous"><a href="/djangoblogindex/?page={{ contacts.previous_page_number }}">上一页</a></li>
+        {% else %}
+            {# 当前页的不存在上一页时,上一页的按钮不可用#}
+            <li class="previous disabled"><a href="#">上一页</a></li>
+        {% endif %}
+        {#上一页按钮结束#}
+        {# 页码开始#}
+        {% for num in paginator.page_range  %}
+            {% if num == currentPage %}
+                <li  class="item active"><a href="/djangoblogindex/?page={{ num }}">{{ num }}</a></li>
+            {% else %}
+                <li  class="item"><a href="/djangoblogindex/?page={{ num }}">{{ num }}</a></li>
+            {% endif %}
+        {% endfor %}
+        {#页码结束#}
+        {# 下一页按钮开始#}
+        {% if contacts.has_next %}
+            <li class="next"><a href="/djangoblogindex/?page={{ contacts.next_page_number }}">下一页</a></li>
+        {% else %}
+            <li class="next disabled"><a href="#">下一页</a></li>
+        {% endif %}
+        {# 下一页按钮结束#}
+    </ul>
+</div>
+
+{# hot 文章 #}
+{% include "web/blogsystem/hot.html" %}
+
+</body>
+</html>

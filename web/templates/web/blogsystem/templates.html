@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% load static %}
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="{%  static 'web/blogsystem/css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
+<link href="{%  static 'web/blogsystem/css/style.css' %}" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="{%  static 'web/blogsystem/css/smoothbox.css' %}" type='text/css' >
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="{%  static 'web/blogsystem/js/jquery.min.js' %}"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- //js -->
+<!-- web font -->
+<link href="http://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- //web font -->
+
+</head>
+<body>
+{# 导航栏 #}
+    {% include "web/nav.html" %}
+
+	<div class="w3ls-banner">
+		<div class="center-container">
+			<div class="navigation">
+				<div class="container">
+					<div class="agileits-logo">
+						<h1><a href="index.html">Today Flats <span class="w3agile">The Best Rental Properties</span></a></h1>
+					</div>
+					<div class="navigation-right">
+						<span class="menu"><img src="{%  static 'web/blogsystem/images/menu.png' %}" alt=" " /></span>
+						<nav class="link-effect-3" id="link-effect-3">
+							<ul class="nav1 nav">
+								<li class="active"><a data-hover="Home" href="index.html">Home</a></li>
+								<li><a href="#about" class="scroll" data-hover="About">About</a></li>
+								<li><a href="#agents" class="scroll" data-hover="Agents">Agents</a></li>
+								<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-hover="Pages">Pages <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a data-hover="Gallery" href="#gallery" class="scroll">Gallery</a></li>
+										<li><a data-hover="Testimonials" href="#testimonial" class="scroll">Testimonials</a></li>
+									</ul>
+								</li>
+								<li><a data-hover="Contact" href="#contact" class="scroll">Contact</a></li>
+							</ul>
+						</nav>
+							<!-- script-for-menu -->
+							<script>
+							   $( "span.menu" ).click(function() {
+								 $( "ul.nav1" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							</script>
+							<!-- //script-for-menu -->
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="w3ls_banner_info">
+				<div class="container">
+					<div class="w3l_banner_logo">
+						<h2>TF</h2>
+					</div>
+					<h3>Duis aute irure dolor in reprehenderit in voluptate velit</h3>
+					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="more">
+						<a href="#" class="hvr-underline-from-center" data-toggle="modal" data-target="#myModal">Learn More</a>
+					</div>
+					<!-- modal-->
+					<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									Today Flats
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								</div>
+								<div class="modal-body">
+									<img src="{%  static 'web/blogsystem/images/17.jpg' %}" alt=" " class="img-responsive" />
+									<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem  vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+										<i>" Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</i></p>
+								</div>
+							</div>
+						</div>
+					</div> <!-- //modal-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- about -->
+	<div class="about">
+		<div class="container">
+			<div class="agileits_about_grids">
+				<div class="col-md-6 agileits_about_grid_left">
+					<h3>What We Offer</h3>
+					<p>Duis aute irure dolor in reprehenderit
+						in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+						officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="col-md-6 agileits_about_grid_right">
+					<img src="{%  static 'web/blogsystem/images/16.jpg' %}" alt=" " class="img-responsive" />
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //about -->
+	<!-- banner-bottom -->
+	<div class="banner-bottom">
+		<div class="container">
+			<div class="col-md-4 wthree_banner_bottom_left">
+				<img src="{%  static 'web/blogsystem/images/1.jpg' %}" alt=" " class="img-responsive" />
+			</div>
+			<div class="col-md-8 wthree_banner_bottom_right">
+				<h3>Nam libero tempore cum soluta nobis est eligendi optio cumqued</h3>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+					dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<ol>
+					<li>sunt in culpa qui officia deserunt</li>
+					<li>Excepteur sint occaecat cupidatat</li>
+					<li>irure dolor in reprehenderit</li>
+					<li>proident, sunt in culpa qui officia</li>
+					<li>deserunt mollit anim id est laborum</li>
+					<li>Duis aute irure dolor in reprehen</li>
+				</ol>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //banner-bottom -->
+	<!-- banner-bottom-image-text -->
+	<div id="about" class="banner-bottom-image-w3text">
+		<div class="col-md-8 banner-bottom-image-w3text-left">
+			<h3>Who We Are</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</p>
+			<h4>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia voluptate velit esse deserunt mollit anim id est laborum.</h4>
+		</div>
+		<div class="col-md-4 banner-bottom-image-w3text-right">
+			<img src="{%  static 'web/blogsystem/images/2.jpg' %}" alt=" " class="img-responsive" />
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!-- //banner-bottom-image-text -->
+	<!-- team -->
+	<div class="team" id="agents">
+		<div class="container">
+			<h3>Meet Our Agents</h3>
+			<p class="nostrud">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+			<div class="agile_team_grids">
+				<div class="col-md-3 agile_team_grid">
+					<div class="view w3-agile-view">
+						<img src="{%  static 'web/blogsystem/images/3.jpg' %}" alt=" " class="img-responsive" />
+						<div class="w3lmask">
+							<h5>quis nostrud</h5>
+							<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit.</p>
+							<div class="agileits_social_icons">
+								<a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+								<a href="#" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+								<a href="#" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+							</div>
+						</div>
+					</div>
+					<h4>John Doe</h4>
+					<p>Agent</p>
+				</div>
+				<div class="col-md-3 agile_team_grid">
+					<div class="view w3-agile-view">
+						<img src="{%  static 'web/blogsystem/images/6.jpg' %}" alt=" " class="img-responsive" />
+						<div class="w3lmask">
+							<h5>quis nostrud</h5>
+							<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit.</p>
+							<div class="agileits_social_icons">
+								<a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+								<a href="#" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+								<a href="#" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+							</div>
+						</div>
+					</div>
+					<h4>Laura Carl</h4>
+					<p>Agent</p>
+				</div>
+				<div class="col-md-3 agile_team_grid">
+					<div class="view w3-agile-view">
+						<img src="{%  static 'web/blogsystem/images/4.jpg' %}" alt=" " class="img-responsive" />
+						<div class="w3lmask">
+							<h5>quis nostrud</h5>
+							<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit.</p>
+							<div class="agileits_social_icons">
+								<a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+								<a href="#" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+								<a href="#" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+							</div>
+						</div>
+					</div>
+					<h4>James Cam</h4>
+					<p>Agent</p>
+				</div>
+				<div class="col-md-3 agile_team_grid">
+					<div class="view w3-agile-view">
+						<img src="{%  static 'web/blogsystem/images/5.jpg' %}" alt=" " class="img-responsive" />
+						<div class="w3lmask">
+							<h5>quis nostrud</h5>
+							<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit.</p>
+							<div class="agileits_social_icons">
+								<a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+								<a href="#" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+								<a href="#" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+							</div>
+						</div>
+					</div>
+					<h4>Luther</h4>
+					<p>Agent</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //team -->
+	<div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
+	<!-- team-bottom -->
+	<div class="team-bottom">
+		<div class="container">
+			<h3>Find Your Wish Property</h3>
+			<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+				suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+			<div class="reservation resrv-agileits-w3layout">
+				<form action="#" method="post">
+					<div class="w3_book_date">
+						<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+						<select id="country" onchange="change_country(this.value)">
+							<option value="null">Location</option>
+							<option value="null">Denmark</option>
+							<option value="AX">Sweden</option>
+							<option value="AX">New Zealand</option>
+							<option value="AX">America</option>
+							<option value="AX">Australia</option>
+						</select>
+					</div>
+					<div class="w3_working_time">
+						<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						<select id="country1" onchange="change_country(this.value)">
+							<option value="null">Type of property</option>
+							<option value="null">Home</option>
+							<option value="AX">Office</option>
+							<option value="AX">Apartment</option>
+							<option value="AX">Acreage</option>
+							<option value="AX">Others</option>
+						</select>
+					</div>
+					<div class="w3_working_time">
+						<select id="country2" onchange="change_country(this.value)">
+							<option value="null">All contracts</option>
+							<option value="null">Sale</option>
+							<option value="AX">Rent</option>
+							<option value="AX">Sold</option>
+						</select>
+					</div>
+					<div class="clearfix"> </div>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- //team-bottom -->
+	<!-- gallery -->
+	<div class="gallery" id="gallery">
+		<h3>Photo Gallery</h3>
+		<p class="nostrud agileits-w3layouts">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+		<div class="w3agile_gallery_grids">
+			<div class="col-md-3 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+					<a class="sb" href="{%  static 'web/blogsystem/images/8.jpg' %}" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum">
+						<figure>
+							<img src="{%  static 'web/blogsystem/images/8.jpg' %}" alt="" class="img-responsive" />
+							<figcaption>
+								<h4>dolore magna aliqua</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+					<a class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum" href="images/9.jpg">
+						<figure>
+							<img src="{%  static 'web/blogsystem/images/9.jpg' %}" alt="" class="img-responsive" />
+							<figcaption>
+								<h4>dolore magna aliqua</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+					<a class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum" href="images/10.jpg">
+						<figure>
+							<img src="{%  static 'web/blogsystem/images/10.jpg' %}" alt="" class="img-responsive" />
+							<figcaption>
+								<h4>dolore magna aliqua</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3 w3agile_gallery_grid w3-agileits">
+				<div class="w3agile_gallery_image">
+					<a class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum" href="images/11.jpg">
+						<figure>
+							<img src="{%  static 'web/blogsystem/images/11.jpg' %}" alt="" class="img-responsive" />
+							<figcaption>
+								<h4>dolore magna aliqua</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3 w3agile_gallery_grid w3-agileits">
+				<div class="w3agile_gallery_image">
+					<a class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum" href="images/12.jpg">
+						<figure>
+							<img src="{%  static 'web/blogsystem/images/12.jpg' %}" alt="" class="img-responsive" />
+							<figcaption>
+								<h4>dolore magna aliqua</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3 w3agile_gallery_grid w3-agileits">
+				<div class="w3agile_gallery_image">
+					<a class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum" href="images/13.jpg">
+						<figure>
+							<img src="{%  static 'web/blogsystem/images/13.jpg' %}" alt="" class="img-responsive" />
+							<figcaption>
+								<h4>dolore magna aliqua</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+					<a class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum" href="images/14.jpg">
+						<figure>
+							<img src="{%  static 'web/blogsystem/images/14.jpg' %}" alt="" class="img-responsive" />
+							<figcaption>
+								<h4>dolore magna aliqua</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3 w3agile_gallery_grid">
+				<div class="w3agile_gallery_image">
+					<a class="sb" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum" href="images/15.jpg">
+						<figure>
+							<img src="{%  static 'web/blogsystem/images/15.jpg' %}" alt="" class="img-responsive" />
+							<figcaption>
+								<h4>dolore magna aliqua</h4>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</figcaption>
+						</figure>
+					</a>
+				</div>
+			</div>
+		   <div class="clearfix"> </div>
+		</div>
+		<script type="text/javascript" src="{%  static 'web/blogsystem/js/smoothbox.jquery2.js' %}"></script>
+	</div>
+	<!-- //gallery -->
+	<!-- testimonials -->
+	<div class="testimonials" id="testimonial">
+		<div class="container">
+			<h3>Testimonials</h3>
+			<p class="nostrud">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+			<div class="testimonials-agileinfo-grids">
+				<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+					<ul id="myTab" class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Joy Allen</a></li>
+						<li role="presentation"><a href="#carl" role="tab" id="carl-tab" data-toggle="tab" aria-controls="carl">Chris Lii</a></li>
+						<li role="presentation"><a href="#james" role="tab" id="james-tab" data-toggle="tab" aria-controls="james">Allen Rosy</a></li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+							<div class="tabcontent-grids">
+								<img src="{%  static 'web/blogsystem/images/2.png' %}" alt=" " class="img-responsive" />
+								<h4>Joy Allen<span>User</span></h4>
+								<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+									cupidatat non proident, sunt in culpa qui officia deserunt mollit
+									anim id est laborum.</p>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="carl" aria-labelledby="carl-tab">
+							<div class="tabcontent-grids">
+								<img src="{%  static 'web/blogsystem/images/3.png' %}" alt=" " class="img-responsive" />
+								<h4>Chris Lii<span>User</span></h4>
+								<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+									cupidatat non proident, sunt in culpa qui officia deserunt mollit
+									anim id est laborum.</p>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="james" aria-labelledby="james-tab">
+							<div class="tabcontent-grids">
+								<img src="{%  static 'web/blogsystem/images/4.png' %}" alt=" " class="img-responsive" />
+								<h4>Allen Rosy<span>User</span></h4>
+								<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+									cupidatat non proident, sunt in culpa qui officia deserunt mollit
+									anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //testimonials -->
+	<!-- contact -->
+	<div class="contact" id="contact">
+		<div class="col-md-6 w3agile_contact_left">
+			<h3>Contact Us</h3>
+			<p>Excepteur sint occaecat cupidatat non proident, sunt
+				in culpa qui officia deserunt mollit anim id est laborum reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</p>
+			<form action="#" method="post">
+				<input type="text" name="Name" placeholder="Name" required="">
+				<input type="email" name="Email" placeholder="Email" required="">
+				<textarea name="Message" placeholder="Message..." required></textarea>
+				<input type="submit" value="Send">
+			</form>
+		</div>
+		<div class="col-md-6 w3agile_contact_right">
+			<h3><a href="index.html">Today Flats </a></h3>
+			<div class="col-xs-6 w3agile_contact_right_agileinfo">
+				<h4>Address</h4>
+				<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>8921 California Long Beach <i>PO Box 8921 202 East Ocean.</i></p>
+				<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(+) 0983 010 823</p>
+				<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></p>
+			</div>
+			<div class="col-xs-6 w3agile_contact_right_agileinfo">
+				<h4>Follow Us</h4>
+				<div class="agileits_social_icons">
+					<a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+					<a href="#" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+					<a href="#" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="w3_copy_right">
+				<p>Copyright &copy; 2017.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!-- //contact -->
+	<!-- bootstrap js -->
+	<script src="{%  static 'web/blogsystem/js/bootstrap.js' %}"></script>
+	<!-- //bootstrap js -->
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="{%  static 'web/blogsystem/js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{%  static 'web/blogsystem/js/easing.js' %}"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!-- start-smooth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>
+	<!-- //here ends scrolling icon -->
+</body>
+</html>
